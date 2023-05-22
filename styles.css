@@ -208,18 +208,25 @@ nav li a {
 }
 
 .circle-links {
-  position: absolute;
-  bottom: -2200px; /* Adjust the bottom position as needed */
-  left: 35%; /* Center the links horizontally */
-  transform: translateX(-20%);
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f5f5f5;
+  z-index: 999;
 }
+
+
 
 .circle-links a {
   margin: 0 90px; /* Adjust the margin as needed to increase or decrease the spacing */
 }
+
 
 .circle-link {
   display: inline-flex;
