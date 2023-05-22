@@ -141,7 +141,7 @@ nav li a {
 
 .shred-title {
   font-family: "Permanent Marker", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: goldenrod;
 }
 .trip-title {
@@ -165,7 +165,7 @@ nav li a {
 }
 
 .card {
-  background-color: #110303;
+  background-color: #1f0505;
   border-radius: 5px;
   padding: 5px;
   text-align: center;
@@ -209,7 +209,7 @@ nav li a {
 
 .circle-links {
   position: absolute;
-  bottom: -1800px; /* Adjust the bottom position as needed */
+  bottom: -2200px; /* Adjust the bottom position as needed */
   left: 50%; /* Center the links horizontally */
   transform: translateX(-50%);
   display: flex;
