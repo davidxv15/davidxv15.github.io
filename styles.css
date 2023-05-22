@@ -209,7 +209,7 @@ nav li a {
 
 .circle-links {
   position: absolute;
-  bottom: -2000px; /* Adjust the bottom position as needed */
+  bottom: -1500px; /* Adjust the bottom position as needed */
   left: 50%; /* Center the links horizontally */
   transform: translateX(-50%);
   display: flex;
