@@ -20,7 +20,7 @@ body {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.9)
     ),
-    url("colorbar.jpg");
+    url("assets/images/colorbar.jpg");
   background-size: cover;
   border-radius: 33px;
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@ nav li a {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.3)
     ),
-    url("IMG_7377.jpg");
+    url("assets/images/IMG_7377.jpg");
   background-size: cover;
   z-index: 1;
   border-radius: 4%;
@@ -246,7 +246,7 @@ nav li a {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.8)
     ),
-    url("colorfooter.jpg");
+    url("assets/images/colorfooter.jpg");
   background-size: cover;
   border-radius: 33px;
   background-repeat: no-repeat;
