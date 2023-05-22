@@ -211,7 +211,7 @@ nav li a {
   position: absolute;
   bottom: -2400px; /* Adjust the bottom position as needed */
   left: 50%; /* Center the links horizontally */
-  transform: translateX(-50%);
+  transform: translateX(-10%);
   display: flex;
   justify-content: space-between;
   align-items: center;
