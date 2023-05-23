@@ -208,23 +208,23 @@ nav li a {
 }
 
 .circle-links {
-  position: fixed;
-  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  position: relative;
+  bottom: 90px; /* Adjust the distance from the bottom as needed */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -88%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
-  background-color: #f5f5f5;
-  z-index: 999;
+  padding: 10px 0;
+  background-color: #931f1f00;
+  z-index: 3;
 }
 
 
 
 .circle-links a {
-  margin: 0 90px; /* Adjust the margin as needed to increase or decrease the spacing */
+  margin: 0 200px; /* Adjust the margin as needed to increase or decrease the spacing */
 }
 
 
@@ -232,8 +232,8 @@ nav li a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 200px; /* Adjust the size of the circle link */
   height: 200px; /* Adjust the size of the circle link */
+  width: 200px; /* Adjust the size of the circle link */
   background-color: #f5f5f5;
   color: #333;
   border-radius: 50%;
