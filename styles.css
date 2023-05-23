@@ -213,8 +213,9 @@ nav li a {
   left: 50%;
   transform: translate(-50%, -88%);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 222px;
   width: 100%;
   padding: 10px 0;
   background-color: #931f1f00;
@@ -224,7 +225,8 @@ nav li a {
 
 
 .circle-links a {
-  margin: 0 200px; /* Adjust the margin as needed to increase or decrease the spacing */
+  margin: 0 10px; /* Adjust the margin as needed to increase or decrease the spacing */
+  justify-content: space-between;
 }
 
 
