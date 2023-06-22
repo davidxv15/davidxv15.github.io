@@ -156,6 +156,10 @@ nav li a {
   font-family: "Nabla", sans-serif;
 }
 
+#a-link {
+  color:#32b2c6;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
