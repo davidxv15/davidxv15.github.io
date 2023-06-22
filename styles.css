@@ -22,7 +22,7 @@ body {
     ),
     url("assets/images/colorbar.jpg");
   background-size: cover;
-  border-radius: 33px;
+  border-radius: 11px;
   background-repeat: no-repeat;
 }
 
@@ -186,8 +186,8 @@ nav li a {
   grid-template-columns: repeat(
     8,
     1fr
-  ); /* Adjust the number '4' to change the number of columns */
-  gap: 10px; /* Adjust the gap as needed */
+  ); 
+  gap: 10px; 
   list-style: none;
   padding: 0;
   transform: translateY(-400px);
@@ -207,9 +207,11 @@ nav li a {
   background-color: #591616;
 }
 
+
+
 .circle-links {
   position: relative;
-  bottom: 90px; /* Adjust the distance from the bottom as needed */
+  bottom: 90px;
   left: 50%;
   transform: translate(-50%, -88%);
   display: flex;
@@ -225,7 +227,7 @@ nav li a {
 
 
 .circle-links a {
-  margin: 0 10px; /* Adjust the margin as needed to increase or decrease the spacing */
+  margin: 0 10px; 
   justify-content: space-between;
 }
 
@@ -234,8 +236,8 @@ nav li a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Adjust the size of the circle link */
-  width: 200px; /* Adjust the size of the circle link */
+  height: 200px;
+  width: 200px; 
   background-color: #f5f5f5;
   color: #333;
   border-radius: 50%;
@@ -257,7 +259,7 @@ nav li a {
     ),
     url("assets/images/colorfooter.jpg");
   background-size: cover;
-  border-radius: 33px;
+  border-radius: 11px;
   background-repeat: no-repeat;
 }
 
@@ -361,4 +363,66 @@ nav li a {
   .master {
     display: none;
   }
+}
+
+#JavaScript:hover {
+  background-color:rgb(199, 22, 22);
+}
+
+#CSS:hover {
+  animation: roll 3s infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+
+#HTML:hover {
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse .85s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1.5);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+#Python:hover{
+  animation-name: slide-right;
+  animation-duration: 9s;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 100px;
+  }
+  to {
+    margin-left: 200px;
+  }
+}
+
+#Django:hover {
+  opacity: 1.0;
+  transition: opacity .55s ease-in-out;
 }
