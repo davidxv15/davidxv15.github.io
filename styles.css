@@ -157,7 +157,7 @@ nav li a {
 }
 
 #a-link {
-  color:#32b2c6;
+  color: #32b2c6;
 }
 
 .card-grid {
@@ -187,11 +187,8 @@ nav li a {
 
 .button-grid {
   display: grid;
-  grid-template-columns: repeat(
-    8,
-    1fr
-  ); 
-  gap: 10px; 
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
   list-style: none;
   padding: 0;
   transform: translateY(-400px);
@@ -211,8 +208,6 @@ nav li a {
   background-color: #591616;
 }
 
-
-
 .circle-links {
   position: relative;
   bottom: 90px;
@@ -228,20 +223,17 @@ nav li a {
   z-index: 3;
 }
 
-
-
 .circle-links a {
-  margin: 0 10px; 
+  margin: 0 10px;
   justify-content: space-between;
 }
-
 
 .circle-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 200px;
-  width: 200px; 
+  width: 200px;
   background-color: #f5f5f5;
   color: #333;
   border-radius: 50%;
@@ -370,7 +362,7 @@ nav li a {
 }
 
 #JavaScript:hover {
-  background-color:rgb(199, 22, 22);
+  background-color: rgb(199, 22, 22);
 }
 
 #CSS:hover {
@@ -387,29 +379,29 @@ nav li a {
 }
 
 #HTML:hover {
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-	animation: pulse .85s infinite;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 0.85s infinite;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(1.5);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
+  0% {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
 
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
-#Python:hover{
+#Python:hover {
   animation-name: slide-right;
   animation-duration: 9s;
 }
@@ -427,6 +419,6 @@ nav li a {
 }
 
 #Django:hover {
-  opacity: 1.0;
-  transition: opacity .55s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.55s ease-in-out;
 }
