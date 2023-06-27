@@ -47,6 +47,13 @@ body {
   transform: scale(1.15);
 }
 
+.grow-bigger {
+  transition: all 0.1s ease-in-out;
+}
+.grow-bigger:hover {
+  transform: scale(2);
+}
+
 header {
   padding: 30px;
 }
@@ -109,7 +116,7 @@ nav li a {
     url("assets/images/IMG_7377.jpg");
   background-size: cover;
   z-index: 1;
-  border-radius: 4%;
+  border-radius: 3%;
 }
 
 .profile-section-1 {
@@ -170,7 +177,7 @@ nav li a {
 
 .card {
   background-color: #1f0505;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 5px;
   text-align: center;
 }
@@ -203,7 +210,7 @@ nav li a {
   height: 100px;
   color: #32b2c6;
   font-family: "Gayathri";
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 16px;
   background-color: #591616;
 }
@@ -421,4 +428,323 @@ nav li a {
 #Django:hover {
   opacity: 1;
   transition: opacity 0.55s ease-in-out;
+  animation: glowing 1300ms infinite;
+}
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 10px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+}
+
+#Git:hover {
+  opacity: 0;
+}
+
+#REACT:hover {
+  color: #591616;
+  background-color: #2ba3b6;
+}
+
+#Bootstrap:hover {
+  animation: shake 0.32s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#Node:hover {
+  animation: horizontal-shaking 0.32s infinite;
+}
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#ExpressJS:hover {
+  /* animation: fadeInOut; */
+  /* } */
+  /* .fadeinout */
+  /* { */
+  animation: fadeinout 0.3s infinite;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#Tailwind:hover {
+  animation: vertical-shaking 0.32s infinite;
+}
+@keyframes vertical-shaking {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#Materialize {
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+#Materialize::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s ease;
+}
+
+#Materialize:hover {
+  opacity: 0;
+}
+
+#Materialize:hover::before {
+  opacity: 1;
+  animation: materialize 2s ease forwards;
+}
+
+@keyframes materialize {
+  0%,
+  50% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#SQL {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+  background-color: #591616;
+  border-radius: 8px;
+  color: #2ba3b6;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+#SQL::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  pointer-events: none;
+}
+
+#SQL:hover {
+  animation: tiltAnimation 1s infinite alternate;
+}
+
+@keyframes tiltAnimation {
+  0% {
+    transform: perspective(1000px) rotateY(-40deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(40deg);
+  }
+}
+
+#SQL:hover::before {
+  opacity: 1;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#Management {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #591616;
+  border-radius: 8px;
+  color: #2ba3b6;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: none;
+}
+
+#Management:hover {
+  animation: dropAnimation 0.6s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes dropAnimation {
+  0% {
+    transform: translateY(-1000px);
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-66px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-33px);
+  }
+  68.9% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-25px);
+  }
+  82.5% {
+    transform: translateY(0px);
+  }
+  87.5% {
+    transform: translateY(-12.5px);
+  }
+  90% {
+    transform: translateY(0px);
+  }
+  95% {
+    transform: translateY(-6.25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#Algorithms {
+  position: relative;
+  background-color: #591616;
+  color: #2ba3b6;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flipped-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2ba3b6;
+  color: #591616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(-180deg);
+  backface-visibility: hidden;
+  transition: transform 0.4s ease;
+}
+
+#Algorithms:hover {
+  transform: rotateX(180deg);
+}
+
+#Algorithms:hover .flipped-text {
+  transform: rotateX(0);
+}
+
+#MongoDB {
+  font-family: Arial, sans-serif; /* Default font */
+  transition: font-family 0.3s ease;
+}
+
+#MongoDB:hover {
+  font-family: "MuseoModerno";
+  font-size: 24px;
 }
