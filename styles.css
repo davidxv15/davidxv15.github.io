@@ -449,9 +449,28 @@ nav li a {
   opacity: 0;
 }
 
+#REACT {
+  background-color: #591616;
+  color: #2ba3b6;
+}
+
 #REACT:hover {
-  color: #591616;
-  background-color: #2ba3b6;
+  animation: alternatingColors 0.5s linear infinite;
+}
+
+@keyframes alternatingColors {
+  0% {
+    color: #591616;
+    background-color: #2ba3b6;
+  }
+  50% {
+    color: #2ba3b6;
+    background-color: #591616;
+  }
+  100% {
+    color: #591616;
+    background-color: #2ba3b6;
+  }
 }
 
 #Bootstrap:hover {
@@ -500,10 +519,6 @@ nav li a {
 }
 
 #ExpressJS:hover {
-  /* animation: fadeInOut; */
-  /* } */
-  /* .fadeinout */
-  /* { */
   animation: fadeinout 0.3s infinite;
 }
 
@@ -740,11 +755,12 @@ nav li a {
 }
 
 #MongoDB {
-  font-family: Arial, sans-serif; /* Default font */
+  font-family: Arial, sans-serif; 
   transition: font-family 0.3s ease;
 }
 
 #MongoDB:hover {
   font-family: "MuseoModerno";
   font-size: 24px;
+  color: #49e819;
 }
