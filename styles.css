@@ -285,6 +285,10 @@ nav li a {
   transform: translate(460px, -20px);
 }
 
+#scrollToTopBtn:hover {
+  cursor: pointer;
+}
+
 /* .bubble {
     position: fixed;
     background: #71acd6;
